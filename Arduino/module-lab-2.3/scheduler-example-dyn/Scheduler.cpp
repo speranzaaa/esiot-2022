@@ -14,7 +14,7 @@ void Scheduler::init(int basePeriod){
   Timer1.initialize(period);
   Timer1.attachInterrupt(timerHandler);
   nTasks = 0;
-}
+}   
 
 bool Scheduler::addTask(Task* task){
   if (nTasks < MAX_TASKS-1){
